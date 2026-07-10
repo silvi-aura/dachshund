@@ -103,7 +103,11 @@ a{text-decoration:none}
 /* AUTHORITY */
 .authority{padding:clamp(44px,7vw,68px) 0;background:var(--surface)}
 .auth-box{max-width:700px;margin:0 auto;display:flex;gap:24px;align-items:center;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:clamp(24px,4vw,36px);box-shadow:var(--shadow)}
-.auth-img{flex-shrink:0;width:90px;height:90px;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:2.4rem;border:2px solid var(--border)}
+.auth-img{flex-shrink:0;width:120px;height:120px;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 4px 14px rgba(139,105,20,.25)}
+.auth-img img{width:100%;height:100%;object-fit:contain}
+.auth-box-stack{flex-direction:column;text-align:center}
+.auth-img-wide{width:100%;max-width:480px;height:auto;border-radius:0;box-shadow:none;background:none}
+.auth-img-wide img{width:100%;height:auto;object-fit:contain}
 .auth-box h3{margin-bottom:6px}
 .auth-box p{font-size:.9rem;color:var(--text2);line-height:1.6}
 
@@ -152,6 +156,9 @@ a{text-decoration:none}
 .price-perk{font-size:.8rem;font-weight:600;color:var(--text2);display:flex;align-items:center;gap:4px}
 .price-perk svg{color:var(--green)}
 .price-urg{font-size:.8rem;color:var(--text3);font-style:italic;margin-top:16px;max-width:380px;margin-left:auto;margin-right:auto}
+.price-note{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:6px 14px;border-radius:99px;margin-top:10px}
+.price-note-block{text-align:center;margin-top:14px}
+.price-note-big{font-size:.9rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:8px 18px;border-radius:99px;display:inline-block;margin-top:14px}
 
 /* TESTIMONIALS */
 .testi{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
@@ -190,11 +197,13 @@ a{text-decoration:none}
 .foot-tag{font-family:'Playfair Display',serif;font-size:.85rem;font-style:italic;color:var(--gold);margin-bottom:6px}
 
 /* FLOAT CTA */
-.float{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:80;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;padding:15px 28px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(29,154,150,.4);transition:all .25s;white-space:nowrap;animation:breathe 3s ease-in-out infinite;opacity:0;pointer-events:none;position:fixed;overflow:hidden}
+.float{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:80;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;padding:11px 28px 13px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(29,154,150,.4);transition:all .25s;white-space:nowrap;animation:breathe 3s ease-in-out infinite;opacity:0;pointer-events:none;position:fixed;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:5px;line-height:1.2}
 .float:hover{background:var(--green-hover)}
 .float::after{content:'';position:absolute;top:-50%;left:-70%;width:45%;height:200%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);animation:shine 2.6s infinite}
 @keyframes breathe{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.04)}}
 .float span{display:inline-block;transition:opacity .3s;position:relative;z-index:1}
+.float-sub{font-size:.66rem;font-weight:800;color:#1E1A15;background:linear-gradient(90deg,#FFFFFF,#FFD3E0);padding:3px 12px;border-radius:99px;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.float-main{font-size:.95rem;font-weight:700}
 
 /* RESPONSIVE */
 @media(max-width:768px){
@@ -240,6 +249,7 @@ a{text-decoration:none}
       <span class="hero-new">USD 24</span>
       <span class="hero-tag">7 bonos GRATIS</span>
     </div>
+    <div class="rv d4"><span class="price-note">💳 El precio se adapta a tu país y moneda</span></div>
     <a class="btn btn-lg rv d5" href="https://pay.hotmart.com/H105700278B">Quiero acceder a la Biblioteca Premium</a>
   </div>
   <div class="hero-vis rv">
@@ -292,12 +302,14 @@ a{text-decoration:none}
     <div class="sol rv d5"><div class="sol-ico">🩺</div><h3>Detectar señales de alerta</h3><p>Vacunas, desparasitación, controles veterinarios y síntomas que necesitan atención urgente.</p></div>
     <div class="sol rv"><div class="sol-ico">🐾</div><h3>Disfrutarlo en cada etapa</h3><p>Guía específica para cachorro, adulto y senior. Cada edad tiene sus prioridades.</p></div>
   </div>
-  <div class="sol-cta rv"><a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero estos resultados → USD 24</a></div>
+  <div class="sol-cta rv"><a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero estos resultados → USD 24</a>
+    <div class="price-note-block"><span class="price-note">💳 Pagás en tu moneda local, al precio adaptado a tu país</span></div>
+  </div>
 </div></section>
 
 <section class="authority"><div class="w">
-  <div class="auth-box rv">
-    <div class="auth-img">🐕</div>
+  <div class="auth-box auth-box-stack rv">
+    <div class="auth-img auth-img-wide"><img src="dachshund-5-perros-rect.webp" alt="Nano, Zoyla, Gokú, Lupe y Onix, los cinco Dachshund detrás de la guía" loading="lazy"></div>
     <div>
       <h3>Creada desde la experiencia real</h3>
       <p>Esta guía no fue escrita desde un escritorio. Fue creada por quien convive día a día con <strong>Nano, Zoyla, Gokú, Lupe y Onix</strong> — cinco Dachshund con personalidades distintas y desafíos reales. Cada capítulo refleja situaciones vividas, errores aprendidos y soluciones probadas en casa antes de ser recomendadas.</p>
@@ -360,6 +372,7 @@ a{text-decoration:none}
       <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Pago seguro</div>
       <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Garantía de devolución</div>
     </div>
+    <div class="price-note-block"><span class="price-note-big">💳 El precio se adapta automáticamente a tu país y moneda. Pagás con tarjeta o con tu billetera virtual favorita, de forma 100% segura con Hotmart.</span></div>
     <a class="btn btn-full" href="https://pay.hotmart.com/H105700278B">Quiero mi Biblioteca por USD 24</a>
     <p class="price-urg">Esta versión incluye los 7 bonos exclusivos sin costo adicional. Podrán cambiar o dejar de incluirse en futuras actualizaciones.</p>
   </div>
@@ -418,16 +431,16 @@ a{text-decoration:none}
   <p>Dachshund Feliz · Biblioteca Premium · Silvi Aura</p>
 </div></footer>
 
-<a class="float" href="https://pay.hotmart.com/H105700278B" id="fc"><span id="ft">Quiero mi Biblioteca</span></a>
+<a class="float" href="https://pay.hotmart.com/H105700278B" id="fc"><span class="float-sub" id="fs">💳 Precio en tu moneda local</span><span class="float-main" id="ft">Acceder por USD 24</span></a>
 
 <script>
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')})},{threshold:.12,rootMargin:'0px 0px -32px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function tgl(b){const a=b.nextElementSibling,o=b.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(q=>{q.classList.remove('open');q.nextElementSibling.style.maxHeight='0'});if(!o){b.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
-const phrases=['Quiero mi Biblioteca','Acceder por USD 24','Descarga inmediata','Quiero cuidar mejor a mi Dachshund','Sí, quiero los 7 bonos gratis'];
-let pi=0;const ft=document.getElementById('ft'),fc=document.getElementById('fc');
-ft.style.transition='opacity .3s';
-setInterval(()=>{ft.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi];ft.style.opacity='1'},280)},4200);
+const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 24'},{sub:'',main:'No te vas a arrepentir 🐾'}];
+let pi=0;const ft=document.getElementById('ft'),fs=document.getElementById('fs'),fc=document.getElementById('fc');
+ft.style.transition='opacity .3s';fs.style.transition='opacity .3s';
+setInterval(()=>{ft.style.opacity='0';fs.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi].main;fs.textContent=phrases[pi].sub;fs.style.display=phrases[pi].sub?'inline-block':'none';ft.style.opacity='1';fs.style.opacity='1'},280)},4200);
 fc.style.transition='opacity .4s,background .25s';
 window.addEventListener('scroll',()=>{const s=window.scrollY;fc.style.opacity=s>350?'1':'0';fc.style.pointerEvents=s>350?'auto':'none'},{passive:true});
 </script>
