@@ -176,6 +176,32 @@ a{text-decoration:none}
 .tc-name{font-weight:700;font-size:.85rem}
 .tc-loc{font-size:.78rem;color:var(--text3)}
 
+/* CREDIBILITY (stats) */
+.cred{padding:clamp(52px,8vw,80px) 0}
+.cred-head{max-width:600px;margin:0 auto 8px;text-align:center}
+.cred-head span{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);background:var(--gold-soft);padding:5px 14px;border-radius:99px;margin-bottom:12px}
+.cred-head p{color:var(--text2);margin:10px auto 0;max-width:520px}
+.cred-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;max-width:820px;margin:32px auto 0}
+.cred-item{background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:18px 20px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:.94rem;color:var(--text);box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.cred-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-up)}
+.cred-item span{font-size:1.35rem;flex-shrink:0}
+.cred-close{text-align:center;font-family:'Playfair Display',serif;font-size:1.15rem;font-style:italic;color:var(--gold);margin-top:32px}
+
+/* DM PROOF (real questions) */
+.dmproof{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
+.dmproof-head{max-width:600px;margin:0 auto 32px;text-align:center}
+.dmproof-head p{color:var(--text2);margin:8px auto 0}
+.dm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;max-width:900px;margin:0 auto}
+.dm-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
+.dm-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-up)}
+.dm-card-head{display:flex;align-items:center;gap:8px;padding:11px 14px;background:var(--surface);border-bottom:1px solid var(--border)}
+.dm-avatar{width:28px;height:28px;border-radius:50%;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+.dm-meta{font-size:.72rem;color:var(--text3);font-weight:700;letter-spacing:.01em}
+.dm-bubble{padding:16px;font-size:.92rem;color:var(--text);line-height:1.55;font-style:italic}
+.dmproof-close{text-align:center;margin-top:32px}
+.dmproof-close p{color:var(--text2);font-size:.95rem;margin-bottom:4px}
+.dmproof-close strong{font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;color:var(--gold);display:block;margin-top:6px}
+
 /* GUARANTEE + FAQ */
 .trust-s{padding:clamp(52px,8vw,80px) 0}
 .guar{max-width:580px;margin:0 auto 44px;background:var(--white);border:2px solid var(--gold);border-radius:var(--r);padding:clamp(24px,4vw,36px);text-align:center;box-shadow:var(--shadow)}
@@ -199,13 +225,13 @@ a{text-decoration:none}
 .foot-tag{font-family:'Playfair Display',serif;font-size:.85rem;font-style:italic;color:var(--gold);margin-bottom:6px}
 
 /* FLOAT CTA */
-.float{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:80;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;padding:11px 28px 13px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(29,154,150,.4);transition:all .25s;max-width:min(92vw,420px);animation:breathe 3s ease-in-out infinite;opacity:0;pointer-events:none;position:fixed;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:5px;line-height:1.2;text-align:center;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 3px rgba(0,0,0,.4)}
-.float:hover{background:var(--green-hover)}
-.float::after{content:'';position:absolute;top:-50%;left:-70%;width:45%;height:200%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);animation:shine 2.6s infinite}
-@keyframes breathe{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.04)}}
-.float span{display:inline-block;transition:opacity .3s;position:relative;z-index:1}
-.float-sub{font-size:.66rem;font-weight:800;color:#1E1A15;background:linear-gradient(90deg,#FFFFFF,#FFD3E0);padding:3px 12px;border-radius:99px;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15);text-shadow:none}
-.float-main{font-size:.95rem;font-weight:700}
+.float{position:fixed;bottom:16px;right:16px;z-index:80;width:250px;height:64px;background:linear-gradient(135deg,#E5C578,#B8973B 55%,#9C7C2E);color:#1E1A15;font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;padding:0 22px;border-radius:99px;border:1.5px solid rgba(255,255,255,.35);cursor:pointer;box-shadow:0 6px 28px rgba(184,151,59,.5),inset 0 1px 0 rgba(255,255,255,.4);transition:background .25s,box-shadow .25s,transform .25s;animation:breathe 3s ease-in-out infinite;opacity:0;pointer-events:none;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;line-height:1.2;text-align:center;text-shadow:0 1px 0 rgba(255,255,255,.35)}
+.float:hover{background:linear-gradient(135deg,#EBCE8C,#C7A34A 55%,#A9873A);transform:scale(1.03)}
+.float::after{content:'';position:absolute;top:-50%;left:-70%;width:45%;height:200%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.65) 50%,transparent 70%);animation:shine 2.6s infinite}
+@keyframes breathe{0%,100%{box-shadow:0 6px 28px rgba(184,151,59,.5),inset 0 1px 0 rgba(255,255,255,.4)}50%{box-shadow:0 6px 34px rgba(184,151,59,.65),0 0 0 6px rgba(184,151,59,.14),inset 0 1px 0 rgba(255,255,255,.4)}}
+.float span{display:block;width:100%;transition:opacity .3s;position:relative;z-index:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.float-sub{font-size:.65rem;font-weight:800;color:#1E1A15;background:rgba(255,255,255,.55);padding:3px 12px;border-radius:99px;letter-spacing:.02em;text-shadow:none;max-width:100%}
+.float-main{font-size:.95rem;font-weight:800;color:#1E1A15}
 
 /* RESPONSIVE */
 @media(max-width:768px){
@@ -222,8 +248,8 @@ a{text-decoration:none}
   .ba-grid{grid-template-columns:1fr}
   .auth-box{flex-direction:column;text-align:center}
   .tc{flex:0 0 280px}
-  .float{left:12px;right:12px;transform:none;animation:breathe-m 3s ease-in-out infinite}
-  @keyframes breathe-m{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+  .float{left:12px;right:12px;width:auto;transform:none;animation:breathe-m 3s ease-in-out infinite}
+  @keyframes breathe-m{0%,100%{box-shadow:0 6px 28px rgba(184,151,59,.5),inset 0 1px 0 rgba(255,255,255,.4)}50%{box-shadow:0 6px 34px rgba(184,151,59,.65),0 0 0 6px rgba(184,151,59,.14),inset 0 1px 0 rgba(255,255,255,.4)}}
 }
 @media(max-width:480px){body{font-size:18px}.w{width:94%}.btn{padding:16px 24px;font-size:1rem}.price-card{padding:24px 20px}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.testi-track{animation:none;flex-wrap:wrap}.btn,.btn::after,.float,.float::after{animation:none}.hero-new::after,.price-big-num::after,.hero-glow{animation:none}}
@@ -239,7 +265,7 @@ a{text-decoration:none}
 <section class="hero"><div class="w"><div class="hero-g">
   <div>
     <div class="hero-eye rv">🐾 Creada por quien convive con 5 salchichas</div>
-    <h1 class="rv d1">La guía que todo dueño de Dachshund <em>necesita leer</em></h1>
+    <h1 class="rv d1">La Biblioteca Premium que todo dueño de Dachshund <em>debería tener</em></h1>
     <p class="hero-p rv d2">Guía Maestra de 34 capítulos más 7 bonos específicos: <strong>8 archivos súper completos</strong> para que cuides su espalda, alimentación, educación e higiene <strong>desde el primer día</strong>. Sin consejos contradictorios. Sin errores costosos.</p>
     <div class="hero-stats rv d3">
       <div class="hero-stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Descarga inmediata</div>
@@ -380,30 +406,97 @@ a{text-decoration:none}
   </div>
 </div></section>
 
-<section class="testi"><div class="w">
-  <div class="testi-head rv">
-    <h2>Lo que dicen quienes ya la tienen</h2>
-    <p>Familias reales que cuidan mejor a su Dachshund con la Biblioteca.</p>
-  </div>
+<!-- ====== V2 Conversion Block ====== -->
+<section id="biblioteca-premium" style="background:#fff8ee;padding:70px 20px;border-top:2px solid #d8b15a;border-bottom:2px solid #d8b15a">
+<div style="max-width:1100px;margin:auto;text-align:center">
+<h2 style="font-size:2.3rem;margin-bottom:15px">No comprás un ebook. Accedés a una <span style="color:#b8860b">Biblioteca Premium</span>.</h2>
+<p style="font-size:1.2rem;max-width:850px;margin:0 auto 35px">
+Todo el contenido fue creado exclusivamente para dueños de Dachshund. Desde el cachorro hasta la etapa senior.
+</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-bottom:40px">
+<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>204</h3><p>Páginas</p></div>
+<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>34</h3><p>Capítulos</p></div>
+<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>7</h3><p>Bonos Premium</p></div>
+<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>8</h3><p>Guías completas</p></div>
 </div>
-<div class="testi-wrap"><div class="testi-track" id="tt">
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Mi cachorro dejó de hacerse pis por toda la casa en menos de una semana. La guía de micción inadecuada sola vale más que los 24 dólares.</blockquote><div class="tc-name">María</div><div class="tc-loc">Buenos Aires, Argentina</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Solo la sección de IVDD me ahorró una fortuna en veterinario. Ahora entiendo qué hábitos cuidan su espalda y cuáles la ponen en riesgo.</blockquote><div class="tc-name">Carlos</div><div class="tc-loc">Santiago, Chile</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Compré varios libros de perros antes y ninguno explica tan bien las particularidades del Dachshund. Se nota que fue escrito por alguien que vive con ellos.</blockquote><div class="tc-name">Fernanda</div><div class="tc-loc">Ciudad de México</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Mi salchicha era terquísimo y no había forma de educarlo. Con las técnicas de educación positiva de la guía empezamos a entendernos mucho mejor.</blockquote><div class="tc-name">Laura</div><div class="tc-loc">Bogotá, Colombia</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>El checklist de llegada me salvó. Preparé todo antes de que llegara mi cachorro y la adaptación fue mucho más tranquila de lo que esperaba.</blockquote><div class="tc-name">Andrés</div><div class="tc-loc">Lima, Perú</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Tengo 3 Dachshunds y aun así aprendí cosas nuevas. La parte de alimentación por edad y la de marcado territorial entre varios perros es excelente.</blockquote><div class="tc-name">Valentina</div><div class="tc-loc">Montevideo, Uruguay</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Se la compré a mi mamá que adoptó un mini. Me dijo que es lo mejor que le regalé en años. Ahora se siente segura con cada decisión que toma.</blockquote><div class="tc-name">Diego</div><div class="tc-loc">Madrid, España</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>No es un PDF genérico. Se nota el cariño y el conocimiento real. Las historias de los cinco perros de la autora le dan un toque muy auténtico.</blockquote><div class="tc-name">Camila</div><div class="tc-loc">Quito, Ecuador</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Mi cachorro dejó de hacerse pis por toda la casa en menos de una semana. La guía de micción inadecuada sola vale más que los 24 dólares.</blockquote><div class="tc-name">María</div><div class="tc-loc">Buenos Aires, Argentina</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Solo la sección de IVDD me ahorró una fortuna en veterinario. Ahora entiendo qué hábitos cuidan su espalda y cuáles la ponen en riesgo.</blockquote><div class="tc-name">Carlos</div><div class="tc-loc">Santiago, Chile</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Compré varios libros de perros antes y ninguno explica tan bien las particularidades del Dachshund. Se nota que fue escrito por alguien que vive con ellos.</blockquote><div class="tc-name">Fernanda</div><div class="tc-loc">Ciudad de México</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Mi salchicha era terquísimo y no había forma de educarlo. Con las técnicas de educación positiva de la guía empezamos a entendernos mucho mejor.</blockquote><div class="tc-name">Laura</div><div class="tc-loc">Bogotá, Colombia</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>El checklist de llegada me salvó. Preparé todo antes de que llegara mi cachorro y la adaptación fue mucho más tranquila de lo que esperaba.</blockquote><div class="tc-name">Andrés</div><div class="tc-loc">Lima, Perú</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Tengo 3 Dachshunds y aun así aprendí cosas nuevas. La parte de alimentación por edad y la de marcado territorial entre varios perros es excelente.</blockquote><div class="tc-name">Valentina</div><div class="tc-loc">Montevideo, Uruguay</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>Se la compré a mi mamá que adoptó un mini. Me dijo que es lo mejor que le regalé en años. Ahora se siente segura con cada decisión que toma.</blockquote><div class="tc-name">Diego</div><div class="tc-loc">Madrid, España</div></div>
-  <div class="tc"><div class="tc-stars">★★★★★</div><blockquote>No es un PDF genérico. Se nota el cariño y el conocimiento real. Las historias de los cinco perros de la autora le dan un toque muy auténtico.</blockquote><div class="tc-name">Camila</div><div class="tc-loc">Quito, Ecuador</div></div>
-</div></div></section>
+
+<h3 style="margin-bottom:25px">Todo lo que vas a descargar</h3>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;text-align:left">
+<div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
+<strong>📘 Guía Maestra</strong>
+<p>34 capítulos con prevención de IVDD, alimentación, educación, salud, higiene, paseos, compras inteligentes y mucho más.</p>
+</div>
+<div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
+<strong>🎁 7 Bonos</strong>
+<p>Micción, conducta, alimentación, juguetes, baño, ropa y columna con protocolos específicos.</p>
+</div>
+<div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
+<strong>🐾 Todas las edades</strong>
+<p>Contenido adaptado para cachorros, adultos y seniors.</p>
+</div>
+<div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
+<strong>📱 Acceso inmediato</strong>
+<p>Disponible para celular, tablet y computadora apenas se acredita el pago.</p>
+</div>
+</div>
+
+<div style="margin-top:45px">
+<a href="https://pay.hotmart.com/H105700278B"
+style="background:#169a7b;color:white;padding:18px 34px;border-radius:40px;text-decoration:none;font-size:20px;font-weight:bold;display:inline-block">
+Quiero acceder a la Biblioteca Premium
+</a>
+</div>
+</div>
+</section>
+
+<section class="cred"><div class="w">
+  <div class="cred-head rv">
+    <h2>Miles de dueños de Dachshund ya confían en este proyecto</h2>
+    <p>Durante los últimos meses, así fue creciendo la comunidad Dachshund Feliz:</p>
+  </div>
+  <div class="cred-list">
+    <div class="cred-item rv d1"><span>🐾</span>Más de 96.000 visualizaciones en Instagram</div>
+    <div class="cred-item rv d2"><span>🐾</span>Videos con más de 77.000 reproducciones en TikTok</div>
+    <div class="cred-item rv d3"><span>🐾</span>Cientos de preguntas respondidas sobre la raza</div>
+    <div class="cred-item rv d4"><span>🐾</span>Contenido creado exclusivamente para Dachshund</div>
+    <div class="cred-item rv d5"><span>🐾</span>Una comunidad que crece todos los días</div>
+  </div>
+</div></section>
+
+<section class="dmproof"><div class="w">
+  <div class="dmproof-head rv">
+    <h2>Estas son algunas de las preguntas reales que recibo todos los días</h2>
+    <p>Mensajes reales de dueños de Dachshund que llegan cada semana a la comunidad.</p>
+  </div>
+  <div class="dm-grid">
+    <div class="dm-card rv d1">
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
+      <div class="dm-bubble">"¿Cuándo puedo empezar a sacar a pasear a mi salchi?"</div>
+    </div>
+    <div class="dm-card rv d2">
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
+      <div class="dm-bubble">"¿Es normal que duerma tanto?"</div>
+    </div>
+    <div class="dm-card rv d3">
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
+      <div class="dm-bubble">"¿Por qué hace pis en todos lados?"</div>
+    </div>
+    <div class="dm-card rv d4">
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
+      <div class="dm-bubble">"¿Qué shampoo me recomendás?"</div>
+    </div>
+    <div class="dm-card rv d5">
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
+      <div class="dm-bubble">"¿Puede subir al sillón?"</div>
+    </div>
+  </div>
+  <div class="dmproof-close rv">
+    <p>Todas reales.</p>
+    <strong>"Esta persona realmente ayuda."</strong>
+  </div>
+</div></section>
 
 <section class="trust-s"><div class="w">
   <div class="guar rv">
@@ -425,7 +518,7 @@ a{text-decoration:none}
 <section class="closing"><div class="w">
   <p class="closing-q rv">Ellos nos acompañan durante una parte de nuestra vida.<br>Nosotros somos toda la vida para ellos.</p>
   <p class="closing-sub rv d1">Dale hoy los cuidados que merece.</p>
-  <a class="btn btn-lg rv d2" href="https://pay.hotmart.com/H105700278B">Quiero acceder a la Biblioteca Premium</a>
+  <a class="btn btn-lg rv d2" id="finalCta" href="https://pay.hotmart.com/H105700278B">Quiero acceder a la Biblioteca Premium</a>
 </div></section>
 
 <footer class="foot"><div class="w">
@@ -439,12 +532,19 @@ a{text-decoration:none}
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')})},{threshold:.12,rootMargin:'0px 0px -32px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function tgl(b){const a=b.nextElementSibling,o=b.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(q=>{q.classList.remove('open');q.nextElementSibling.style.maxHeight='0'});if(!o){b.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
-const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 24'},{sub:'',main:'El precio se adapta automáticamente a tu país y moneda'}];
+const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 24'},{sub:'🐾 Adaptado a tu país',main:'Ver la Biblioteca Premium'},{sub:'⏳ Acceso inmediato',main:'Quiero mi Biblioteca'}];
 let pi=0;const ft=document.getElementById('ft'),fs=document.getElementById('fs'),fc=document.getElementById('fc');
 ft.style.transition='opacity .3s';fs.style.transition='opacity .3s';
 setInterval(()=>{ft.style.opacity='0';fs.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi].main;fs.textContent=phrases[pi].sub;fs.style.display=phrases[pi].sub?'inline-block':'none';ft.style.opacity='1';fs.style.opacity='1'},280)},4200);
 fc.style.transition='opacity .4s,background .25s';
-window.addEventListener('scroll',()=>{const s=window.scrollY;fc.style.opacity=s>350?'1':'0';fc.style.pointerEvents=s>350?'auto':'none'},{passive:true});
+let finalCtaVisible=false;
+function updateFloat(){const s=window.scrollY;const show=s>350&&!finalCtaVisible;fc.style.opacity=show?'1':'0';fc.style.pointerEvents=show?'auto':'none'}
+window.addEventListener('scroll',updateFloat,{passive:true});
+const finalCta=document.getElementById('finalCta');
+if(finalCta){
+  const fio=new IntersectionObserver(entries=>{entries.forEach(x=>{finalCtaVisible=x.isIntersecting});updateFloat()},{threshold:.3});
+  fio.observe(finalCta);
+}
 </script>
 </body>
 </html>
