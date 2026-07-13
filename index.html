@@ -32,7 +32,7 @@ a{text-decoration:none}
 .rv{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
 .rv.on{opacity:1;transform:none}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:1.05rem;padding:18px 36px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 24px var(--green-glow);transition:all .25s;position:relative;overflow:hidden;animation:btn-pulse 2.4s ease-in-out infinite}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:1.05rem;padding:18px 36px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 24px var(--green-glow);transition:all .25s;position:relative;overflow:hidden;animation:btn-pulse 2.4s ease-in-out infinite;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 3px rgba(0,0,0,.4)}
 .btn:hover{background:var(--green-hover);transform:translateY(-2px) scale(1.02);box-shadow:0 10px 36px var(--green-glow);animation-play-state:paused}
 .btn::after{content:'';position:absolute;top:-50%;left:-70%;width:45%;height:200%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);animation:shine 2.2s infinite}
 @keyframes shine{0%{left:-70%}55%,100%{left:140%}}
@@ -159,6 +159,8 @@ a{text-decoration:none}
 .price-note{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:6px 14px;border-radius:99px;margin-top:10px}
 .price-note-block{text-align:center;margin-top:14px}
 .price-note-big{font-size:.9rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:8px 18px;border-radius:99px;display:inline-block;margin-top:14px}
+.price-adapt{font-size:.98rem;font-weight:700;color:var(--green);background:rgba(29,154,150,.10);border:1px solid rgba(29,154,150,.25);display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 20px;border-radius:99px;margin:12px auto 0;text-align:center;animation:adapt-pulse 2.4s ease-in-out infinite}
+@keyframes adapt-pulse{0%,100%{box-shadow:0 0 0 0 rgba(29,154,150,.22)}50%{box-shadow:0 0 0 8px rgba(29,154,150,0)}}
 
 /* TESTIMONIALS */
 .testi{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
@@ -197,12 +199,12 @@ a{text-decoration:none}
 .foot-tag{font-family:'Playfair Display',serif;font-size:.85rem;font-style:italic;color:var(--gold);margin-bottom:6px}
 
 /* FLOAT CTA */
-.float{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:80;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;padding:11px 28px 13px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(29,154,150,.4);transition:all .25s;white-space:nowrap;animation:breathe 3s ease-in-out infinite;opacity:0;pointer-events:none;position:fixed;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:5px;line-height:1.2}
+.float{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:80;background:var(--green);color:var(--white);font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;padding:11px 28px 13px;border-radius:99px;border:none;cursor:pointer;box-shadow:0 6px 28px rgba(29,154,150,.4);transition:all .25s;max-width:min(92vw,420px);animation:breathe 3s ease-in-out infinite;opacity:0;pointer-events:none;position:fixed;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:5px;line-height:1.2;text-align:center;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 3px rgba(0,0,0,.4)}
 .float:hover{background:var(--green-hover)}
 .float::after{content:'';position:absolute;top:-50%;left:-70%;width:45%;height:200%;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);animation:shine 2.6s infinite}
 @keyframes breathe{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.04)}}
 .float span{display:inline-block;transition:opacity .3s;position:relative;z-index:1}
-.float-sub{font-size:.66rem;font-weight:800;color:#1E1A15;background:linear-gradient(90deg,#FFFFFF,#FFD3E0);padding:3px 12px;border-radius:99px;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.float-sub{font-size:.66rem;font-weight:800;color:#1E1A15;background:linear-gradient(90deg,#FFFFFF,#FFD3E0);padding:3px 12px;border-radius:99px;letter-spacing:.02em;box-shadow:0 2px 6px rgba(0,0,0,.15);text-shadow:none}
 .float-main{font-size:.95rem;font-weight:700}
 
 /* RESPONSIVE */
@@ -249,7 +251,7 @@ a{text-decoration:none}
       <span class="hero-new">USD 24</span>
       <span class="hero-tag">7 bonos GRATIS</span>
     </div>
-    <div class="rv d4"><span class="price-note">💳 El precio se adapta a tu país y moneda</span></div>
+    <div class="rv d4" style="text-align:center;margin-bottom:22px"><span class="price-adapt">💳 El precio se adapta automáticamente a tu país y moneda</span></div>
     <a class="btn btn-lg rv d5" href="https://pay.hotmart.com/H105700278B">Quiero acceder a la Biblioteca Premium</a>
   </div>
   <div class="hero-vis rv">
@@ -365,6 +367,7 @@ a{text-decoration:none}
     <div class="price-big">
       <div class="price-big-label">Hoy accedés a todo por:</div>
       <div class="price-big-num">USD 24</div>
+      <span class="price-adapt">💳 El precio se adapta automáticamente a tu país y moneda</span>
     </div>
     <div class="price-perks">
       <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Descarga inmediata</div>
@@ -372,7 +375,6 @@ a{text-decoration:none}
       <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Pago seguro</div>
       <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Garantía de devolución</div>
     </div>
-    <div class="price-note-block"><span class="price-note-big">💳 El precio se adapta automáticamente a tu país y moneda. Pagás con tarjeta o con tu billetera virtual favorita, de forma 100% segura con Hotmart.</span></div>
     <a class="btn btn-full" href="https://pay.hotmart.com/H105700278B">Quiero mi Biblioteca por USD 24</a>
     <p class="price-urg">Esta versión incluye los 7 bonos exclusivos sin costo adicional. Podrán cambiar o dejar de incluirse en futuras actualizaciones.</p>
   </div>
@@ -437,7 +439,7 @@ a{text-decoration:none}
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')})},{threshold:.12,rootMargin:'0px 0px -32px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function tgl(b){const a=b.nextElementSibling,o=b.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(q=>{q.classList.remove('open');q.nextElementSibling.style.maxHeight='0'});if(!o){b.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
-const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 24'},{sub:'',main:'No te vas a arrepentir 🐾'}];
+const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 24'},{sub:'',main:'El precio se adapta automáticamente a tu país y moneda'}];
 let pi=0;const ft=document.getElementById('ft'),fs=document.getElementById('fs'),fc=document.getElementById('fc');
 ft.style.transition='opacity .3s';fs.style.transition='opacity .3s';
 setInterval(()=>{ft.style.opacity='0';fs.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi].main;fs.textContent=phrases[pi].sub;fs.style.display=phrases[pi].sub?'inline-block':'none';ft.style.opacity='1';fs.style.opacity='1'},280)},4200);
