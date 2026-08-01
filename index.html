@@ -432,8 +432,8 @@ Todo el contenido fue creado exclusivamente para dueños de Dachshund. Desde el 
 </p>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-bottom:40px">
-<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>204</h3><p>Páginas</p></div>
-<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>34</h3><p>Capítulos</p></div>
+<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>147</h3><p>Páginas</p></div>
+<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>10</h3><p>Capítulos</p></div>
 <div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>7</h3><p>Bonos Premium</p></div>
 <div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>8</h3><p>Guías completas</p></div>
 </div>
@@ -443,11 +443,11 @@ Todo el contenido fue creado exclusivamente para dueños de Dachshund. Desde el 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;text-align:left">
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
 <strong>📘 Guía Maestra</strong>
-<p>34 capítulos con prevención de IVDD, alimentación, educación, salud, higiene, paseos, compras inteligentes y mucho más.</p>
+<p>10 capítulos con prevención de IVDD, alimentación, educación, salud, higiene, paseos, compras inteligentes y mucho más.</p>
 </div>
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
 <strong>🎁 7 Bonos</strong>
-<p>Micción, conducta, alimentación, juguetes, baño, ropa y columna con protocolos específicos.</p>
+<p>Micción, conducta, alimentación, juguetes, convivencia con otros perros, ropa y columna con protocolos específicos.</p>
 </div>
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
 <strong>🐾 Todas las edades</strong>
@@ -485,7 +485,7 @@ Quiero acceder a la Biblioteca Premium
 <section class="dmproof"><div class="w">
   <div class="dmproof-head rv">
     <h2>Estas son algunas de las preguntas reales que recibo todos los días</h2>
-    <p>Mensajes reales de dueños de Dachshund que llegan cada semana a la comunidad.</p>
+    <p>Mensajes reales de dueños de Dachshund que llegan cada semana a la comunidad @dachshund_feliz.</p>
   </div>
   <div class="dm-grid">
     <div class="dm-card rv d1">
@@ -549,7 +549,7 @@ Quiero acceder a la Biblioteca Premium
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')})},{threshold:.12,rootMargin:'0px 0px -32px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function tgl(b){const a=b.nextElementSibling,o=b.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(q=>{q.classList.remove('open');q.nextElementSibling.style.maxHeight='0'});if(!o){b.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
-const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 24'},{sub:'🐾 Adaptado a tu país',main:'Ver la Biblioteca Premium'},{sub:'⏳ Acceso inmediato',main:'Quiero mi Biblioteca'}];
+const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 17,99'},{sub:'🐾 Adaptado a tu país',main:'Ver la Biblioteca Premium'},{sub:'⏳ Acceso inmediato',main:'Quiero mi Biblioteca'}];
 let pi=0;const ft=document.getElementById('ft'),fs=document.getElementById('fs'),fc=document.getElementById('fc');
 ft.style.transition='opacity .3s';fs.style.transition='opacity .3s';
 setInterval(()=>{ft.style.opacity='0';fs.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi].main;fs.textContent=phrases[pi].sub;fs.style.display=phrases[pi].sub?'inline-block':'none';ft.style.opacity='1';fs.style.opacity='1'},280)},4200);
