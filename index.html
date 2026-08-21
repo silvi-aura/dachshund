@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Biblioteca Premium Dachshund Feliz · Guía Maestra de 10 capítulos con toda la información + 7 bonos exclusivos</title>
-<meta name="description" content="La guía más completa en español para dueños de Dachshund. Guía Maestra de 10 capítulos más 7 bonos específicos: 8 archivos súper completos en total, con prevención de IVDD, alimentación, educación y más. Creada por quien convive con 5 salchis.">
+<title>De vivir con miedo en cada salto a tener la tranquilidad de saber que estás haciendo todo bien</title>
+<meta name="description" content="Lo que la mayoría descubre recién en la sala de espera del veterinario, vos lo vas a saber hoy: protocolo completo de columna, conducta y cuidados diarios detallados mas abajo — antes de que un error cotidiano cueste una cirugía de más $2000 dólarestes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +14,7 @@
   --bg:#F9F1E4;--surface:#F1E7D4;--surface2:#E6D8BE;
   --gold:#B8973B;--gold-soft:rgba(184,151,59,.12);--gold-glow:rgba(184,151,59,.35);
   --green:#1D9A96;--green-hover:#178682;--green-glow:rgba(29,154,150,.28);
-  --red-soft:#C0392B;
+  --red-soft:#C0392B;--red-glow:rgba(192,57,43,.15);
   --text:#1E1A15;--text2:#5C5347;--text3:#8A7F73;
   --white:#fff;--border:rgba(184,151,59,.15);
   --r:20px;--r-sm:14px;
@@ -51,9 +50,10 @@ a{text-decoration:none}
 /* HERO */
 .hero{padding:clamp(40px,7vw,72px) 0 clamp(32px,5vw,56px)}
 .hero-g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.hero-eye{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:600;color:var(--gold);background:var(--gold-soft);padding:7px 16px;border-radius:99px;margin-bottom:16px}
+.hero-eye{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;color:var(--red-soft);background:var(--red-glow);padding:7px 16px;border-radius:99px;margin-bottom:16px}
 .hero h1{margin-bottom:14px}
 .hero h1 em{font-style:italic;color:var(--gold)}
+.gold-italic{color:var(--gold);font-style:italic;}
 .hero-p{font-size:1.05rem;color:var(--text2);margin-bottom:20px;max-width:540px;line-height:1.6}
 .hero-stats{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:22px}
 .hero-stat{display:flex;align-items:center;gap:6px;font-weight:600;font-size:.88rem;color:var(--text)}
@@ -79,19 +79,19 @@ a{text-decoration:none}
 
 /* PROBLEM */
 .problem{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
-.problem-head{max-width:580px;margin:0 auto 36px;text-align:center}
-.problem-head p{color:var(--text2);margin:8px auto 0}
+.problem-head{max-width:680px;margin:0 auto 36px;text-align:center}
+.problem-head p{color:var(--text2);margin:8px auto 0;font-size:1.05rem}
 .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:28px}
 .pain{background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:22px;display:flex;gap:14px;align-items:flex-start;transition:transform .3s,box-shadow .3s}
 .pain:hover{transform:translateY(-3px);box-shadow:var(--shadow-up)}
 .pain-ico{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-size:1.15rem}
 .pain p{font-size:.92rem;color:var(--text2);line-height:1.55}
 .pain p strong{color:var(--text)}
-.problem-close{text-align:center;font-family:'Playfair Display',serif;font-size:1.15rem;font-style:italic;color:var(--gold)}
+.problem-close{text-align:center;font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic;color:var(--gold);max-width:700px;margin:0 auto}
 
 /* SOLUTION */
 .solution{padding:clamp(52px,8vw,80px) 0}
-.solution-head{max-width:600px;margin:0 auto 36px;text-align:center}
+.solution-head{max-width:650px;margin:0 auto 36px;text-align:center}
 .solution-head p{color:var(--text2);margin:8px auto 0}
 .sol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:32px}
 .sol{background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:24px;text-align:center;transition:transform .3s,box-shadow .3s}
@@ -107,15 +107,15 @@ a{text-decoration:none}
 .auth-img{flex-shrink:0;width:120px;height:120px;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 4px 14px rgba(139,105,20,.25)}
 .auth-img img{width:100%;height:100%;object-fit:contain}
 .auth-box-stack{flex-direction:column;text-align:center}
-.auth-img-wide{width:100%;max-width:480px;height:auto;border-radius:16px;padding:9px;background:var(--white);border:3px solid #8B6914;box-shadow:0 10px 30px rgba(139,105,20,.28);position:relative}
-.auth-img-wide::after{content:'';position:absolute;inset:5px;border:1.5px solid #C4A252;border-radius:11px;pointer-events:none}
-.auth-img-wide img,.auth-img-wide video{width:100%;height:auto;object-fit:cover;display:block;border-radius:9px}
+.auth-img-wide{width:100%;max-width:720px;aspect-ratio:16 / 9;height:auto;border-radius:16px;padding:10px;background:#fff;border:3px solid #8B6914;box-shadow:0 10px 30px rgba(139,105,20,.28);position:relative;overflow:hidden;}
+.auth-img-wide::after{content:'';position:absolute;inset:5px;border:1.5px solid #C4A252;border-radius:11px;pointer-events:none;z-index:3;} 
+.auth-img-wide video{width:100%;height:100%;object-fit:cover;display:block;border-radius:9px;position:relative;z-index:1;}
 .auth-box h3{margin-bottom:6px}
 .auth-box p{font-size:.9rem;color:var(--text2);line-height:1.6}
 
 /* RESOURCES */
 .resources{padding:clamp(52px,8vw,80px) 0}
-.resources-head{max-width:600px;margin:0 auto 36px;text-align:center}
+.resources-head{max-width:650px;margin:0 auto 36px;text-align:center}
 .resources-head p{color:var(--text2);margin:8px auto 0}
 .res-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
 .res{background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:24px;display:flex;gap:16px;align-items:flex-start;transition:transform .3s,box-shadow .3s}
@@ -130,7 +130,7 @@ a{text-decoration:none}
 /* BEFORE/AFTER */
 .transform{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
 .transform-head{text-align:center;margin-bottom:36px}
-.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:700px;margin:0 auto}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:750px;margin:0 auto}
 .ba-col{border-radius:var(--r-sm);padding:clamp(24px,4vw,32px)}
 .ba-before{background:var(--white);border:1.5px solid #E8D5D5}
 .ba-after{background:var(--white);border:1.5px solid #C8E0CB}
@@ -160,36 +160,19 @@ a{text-decoration:none}
 .price-urg{font-size:.8rem;color:var(--text3);font-style:italic;margin-top:16px;max-width:380px;margin-left:auto;margin-right:auto}
 .price-note{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:6px 14px;border-radius:99px;margin-top:10px}
 .price-note-block{text-align:center;margin-top:14px}
-.price-note-big{font-size:.9rem;font-weight:700;color:var(--gold);background:var(--gold-soft);padding:8px 18px;border-radius:99px;display:inline-block;margin-top:14px}
 .price-adapt{font-size:.98rem;font-weight:700;color:var(--green);background:rgba(29,154,150,.10);border:1px solid rgba(29,154,150,.25);display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 20px;border-radius:99px;margin:12px auto 0;text-align:center;animation:adapt-pulse 2.4s ease-in-out infinite}
 @keyframes adapt-pulse{0%,100%{box-shadow:0 0 0 0 rgba(29,154,150,.22)}50%{box-shadow:0 0 0 8px rgba(29,154,150,0)}}
-
-/* TESTIMONIALS */
-.testi{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
-.testi-head{text-align:center;margin-bottom:36px}
-.testi-head p{color:var(--text2);margin:8px auto 0}
-.testi-wrap{overflow:hidden;position:relative}
-.testi-track{display:flex;gap:14px;animation:tscroll 45s linear infinite}
-.testi-track:hover{animation-play-state:paused}
-@keyframes tscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.tc{flex:0 0 310px;background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:22px}
-.tc-stars{color:var(--gold);font-size:.85rem;letter-spacing:2px;margin-bottom:10px}
-.tc blockquote{font-size:.88rem;color:var(--text2);line-height:1.6;margin-bottom:14px;font-style:italic}
-.tc-name{font-weight:700;font-size:.85rem}
-.tc-loc{font-size:.78rem;color:var(--text3)}
 
 /* CREDIBILITY (stats) */
 .cred{padding:clamp(52px,8vw,80px) 0}
 .cred-head{max-width:600px;margin:0 auto 8px;text-align:center}
-.cred-head span{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);background:var(--gold-soft);padding:5px 14px;border-radius:99px;margin-bottom:12px}
 .cred-head p{color:var(--text2);margin:10px auto 0;max-width:520px}
 .cred-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;max-width:820px;margin:32px auto 0}
 .cred-item{background:var(--white);border:1px solid var(--border);border-radius:var(--r-sm);padding:18px 20px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:.94rem;color:var(--text);box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
 .cred-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-up)}
 .cred-item span{font-size:1.35rem;flex-shrink:0}
-.cred-close{text-align:center;font-family:'Playfair Display',serif;font-size:1.15rem;font-style:italic;color:var(--gold);margin-top:32px}
 
-/* DM PROOF (real questions) */
+/* DM PROOF */
 .dmproof{padding:clamp(52px,8vw,80px) 0;background:var(--surface)}
 .dmproof-head{max-width:600px;margin:0 auto 32px;text-align:center}
 .dmproof-head p{color:var(--text2);margin:8px auto 0}
@@ -221,7 +204,7 @@ a{text-decoration:none}
 
 /* CLOSING */
 .closing{padding:clamp(56px,9vw,96px) 0;background:var(--surface);text-align:center}
-.closing-q{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3.2vw,2rem);font-style:italic;max-width:560px;margin:0 auto 10px;line-height:1.4}
+.closing-q{font-family:'Playfair Display',serif;font-size:clamp(1.3rem,3.2vw,2rem);font-style:italic;max-width:620px;margin:0 auto 10px;line-height:1.4}
 .closing-sub{font-size:1rem;color:var(--text2);margin-bottom:28px}
 .foot{padding:28px 0;text-align:center;font-size:.78rem;color:var(--text3)}
 .foot-tag{font-family:'Playfair Display',serif;font-size:.85rem;font-style:italic;color:var(--gold);margin-bottom:6px}
@@ -249,12 +232,11 @@ a{text-decoration:none}
   .pain-grid,.sol-grid,.res-grid{grid-template-columns:1fr}
   .ba-grid{grid-template-columns:1fr}
   .auth-box{flex-direction:column;text-align:center}
-  .tc{flex:0 0 280px}
   .float{left:12px;right:12px;width:auto;transform:none;animation:breathe-m 3s ease-in-out infinite}
   @keyframes breathe-m{0%,100%{box-shadow:0 6px 28px rgba(184,151,59,.5),inset 0 1px 0 rgba(255,255,255,.4)}50%{box-shadow:0 6px 34px rgba(184,151,59,.65),0 0 0 6px rgba(184,151,59,.14),inset 0 1px 0 rgba(255,255,255,.4)}}
 }
 @media(max-width:480px){body{font-size:18px}.w{width:94%}.btn{padding:16px 24px;font-size:1rem}.price-card{padding:24px 20px}}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.testi-track{animation:none;flex-wrap:wrap}.btn,.btn::after,.float,.float::after{animation:none}.hero-new::after,.price-big-num::after,.hero-glow{animation:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.btn,.btn::after,.float,.float::after{animation:none}.hero-new::after,.price-big-num::after,.hero-glow{animation:none}}
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -274,197 +256,232 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 </head>
-<body>
-
-<nav class="nav"><div class="nav-in w">
-  <div class="nav-brand">Dachshund <b>Feliz</b></div>
-  <div class="nav-pill">📚 Biblioteca Premium</div>
-</div></nav>
-
-<section class="hero"><div class="w"><div class="hero-g">
-  <div>
-    <div class="hero-eye rv">🐾 Creada por quien convive con 5 salchichas</div>
-    <h1 class="rv d1">La Biblioteca Premium que todo dueño de Dachshund <em>debería tener</em></h1>
-    <p class="hero-p rv d2">Guía Maestra de 10 capítulos más 7 bonos exclusivos: <strong>8 archivos súper completos</strong> para que cuides su espalda, alimentación, educación e higiene <strong>desde el primer día</strong>. Sin consejos contradictorios. Sin errores costosos.</p>
-    <div class="hero-stats rv d3">
-      <div class="hero-stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Descarga inmediata</div>
-      <div class="hero-stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Celular, tablet y PC</div>
-      <div class="hero-stat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Garantía de devolución</div>
-    </div>
-    <div class="hero-pr rv d4">
-      <span class="hero-old">USD 35</span>
-      <span class="hero-new">USD 17,99</span>
-      <span class="hero-tag">7 bonos GRATIS</span>
-    </div>
-    <div class="rv d4" style="text-align:center;margin-bottom:22px"><span class="price-adapt">💳 El precio se adapta automáticamente a tu país y moneda</span></div>
-    <a class="btn btn-lg rv d5" href="https://pay.hotmart.com/H105700278B">Quiero acceder a la Biblioteca Premium</a>
-  </div>
-  <div class="hero-vis rv">
-    <div class="hero-glow"></div>
-    <div class="hero-frame">
-      <img src="dachshund-feliz-cover.jpg" alt="Portada de la guía Dachshund Feliz" width="500" height="750">
-    </div>
-    <div class="hero-badges">
-      <div class="hero-badge">📘 Guía Maestra 10 capítulos</div>
-      <div class="hero-badge">📦 8 archivos completos</div>
-      <div class="hero-badge">🎁 7 bonos exclusivos</div>
-      <div class="hero-badge">🩺 Prevención IVDD</div>
+<!-- TÍTULO PRINCIPAL ARRIBA DE TODO -->
+<section class="hero">
+  <div class="w">
+    <div class="hero-g">
+      <div>
+        <div class="hero-eye">⚠️ ALERTA PARA DUEÑOS DE DACHSHUND</div>
+        <h1>De vivir con miedo en cada salto <em>a tener la tranquilidad</em><br>de saber que estás haciendo todo bien</h1>
+        <p class="hero-p">Protege a tu Dachshund de la IVDD, elimina la micción inadecuada y los ladridos incesantes. La solución definitiva para dueños que aman a su salchi y no quieren cometer errores costosos.</p>
+        <div class="hero-pr">
+          <span class="hero-old">USD 77,00</span>
+          <span class="hero-new">USD 17,99</span>
+          <span class="hero-tag">✅ 8 BONOS GRATIS</span>
+        </div>
+        <a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero proteger a mi salchi 🐾 </a>
+      </div>
     </div>
   </div>
-</div></div></section>
-
-<div class="trustbar"><div class="trustbar-in">
-  <div class="trustbar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Pago 100% seguro</div>
-  <div class="trustbar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Plataforma Hotmart</div>
-  <div class="trustbar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Garantía de devolución</div>
-  <div class="trustbar-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Acceso inmediato</div>
-</div></div>
-
-<section class="problem"><div class="w">
+</section>
+<section class="problem" id="problem"><div class="w">
   <div class="problem-head rv">
-    <h2>¿Te pasa alguna de estas situaciones?</h2>
-    <p>Si tenés un Dachshund, seguramente te identificás con más de una.</p>
+  <h2>¿Sientes que <span class="gold-italic">podrías estar cometiendo errores</span> con tu Dachshund <span class="gold-italic">sin darte cuenta</span>?</h2>
+    <p>Columna, alimentación, peso, micción, conducta, celos, ropa y cuidados diarios: aprendé qué hacer y qué evitar para cuidar mejor a tu compañero incondicional.</p>
   </div>
   <div class="pain-grid">
-    <div class="pain rv d1"><div class="pain-ico">⚡</div><div><p><strong>Salta del sillón sin control</strong> y te aterra que se lastime la espalda. No sabés si ya tiene daño o cómo prevenirlo.</p></div></div>
-    <div class="pain rv d2"><div class="pain-ico">💧</div><div><p><strong>Hace pis por toda la casa</strong> y ya probaste de todo. No sabés si es conductual, territorial o un problema de salud.</p></div></div>
-    <div class="pain rv d3"><div class="pain-ico">🔊</div><div><p><strong>Ladra sin parar</strong> y no entendés por qué. Te frustra no poder comunicarte con él.</p></div></div>
-    <div class="pain rv d4"><div class="pain-ico">🦴</div><div><p><strong>Mordisquea todo</strong> — cables, zapatos, muebles — y no sabés si es aburrimiento, ansiedad o falta de límites.</p></div></div>
-    <div class="pain rv d5"><div class="pain-ico">🍽️</div><div><p><strong>No estás seguro/a de qué darle de comer</strong>, cuánto, ni si los premios que le das son adecuados para su peso.</p></div></div>
-    <div class="pain rv"><div class="pain-ico">🌐</div><div><p><strong>Buscás información en internet</strong> y cada página dice algo distinto. No sabés en quién confiar.</p></div></div>
+    <div class="pain rv d1"><div class="pain-ico">🩺</div><div><p><strong>¿Te preocupa que un mal movimiento termine afectando su columna?:</strong> Lo ves saltar del sillón o de la cama y se te frena el corazón. Sabés que un solo mal golpe puede costarle la movilidad y a ti miles de dólares en operaciones.</p></div></div>
+    <div class="pain rv d2"><div class="pain-ico">💧</div><div><p><strong>¿Hace pis adentro y ya probaste de todo sin entender por qué?:</strong> Ya probaste alfombras sanitarias, sprays y regaños, pero sigue haciendo sus necesidades en la alfombra o las patas de la mesa. Te agota limpiar todo el día.</p></div></div>
+    <div class="pain rv d3"><div class="pain-ico">🔊</div><div><p><strong>¿Sus ladridos constantes molestan a los vecinos?:</strong> Ladra al timbre, a los ruidos, a las visitas o cuando se queda solo. Te da culpa dejarlo solo porque sabés que la pasa mal con la ansiedad.</p></div></div>
+    <div class="pain rv d4"><div class="pain-ico">🦴</div><div><p><strong>Destrucción por terquedad:</strong> Sillas mordidas, zapatos rotos o libros destrozados. Sentís que por más que le decís "NO", te ignora por completo debido a la terquedad nativa de la raza.</p></div></div>
+    <div class="pain rv d5"><div class="pain-ico">⚖️</div><div><p><strong>¿Come bien pero sigue pidiendo comida y te preocupa que aumente de peso::</strong> Sabés que un gramo de más en un Dachshund arruina su espalda, pero no sabés exactamente cuánta comida darle ni cómo calmar su ansiedad por comer.</p></div></div>
+    <div class="pain rv"><div class="pain-ico">🤯</div><div><p><strong>¿Internet brinda información a medias?:</strong> Lees en foros cosas contradictorias y no sabes cuál dice la verdad y qué es seguro para su anatomía única. Probar a ciegas pone en riesgo su salud y tu tranquilidad.</p></div></div>
   </div>
-  <p class="problem-close rv">"No estás solo/a. Por eso nació la Biblioteca Premium Dachshund Feliz."</p>
+  <p class="problem-close rv">"Si te identificaste con alguno de estos problemas, no significa que seas un mal dueño. Significa que necesitás información específica sobre esta raza."</p>
 </div></section>
 
 <section class="solution"><div class="w">
   <div class="solution-head rv">
-    <h2>Lo que vas a lograr con la Biblioteca</h2>
-    <p>No hablamos de capítulos. Hablamos de resultados concretos para vos y tu Dachshund.</p>
+    <h2>Transforma la ansiedad en tranquilidad absoluta</h2>
+    <p>Pasa de la frustración a disfrutar plenamente de tu compañero con soluciones diseñadas para su anatomía y carácter.</p>
   </div>
   <div class="sol-grid">
-    <div class="sol rv d1"><div class="sol-ico">🛡️</div><h3>Proteger su espalda</h3><p>Prevención diaria de IVDD, señales de alerta y qué hacer ante una emergencia de columna.</p></div>
-    <div class="sol rv d2"><div class="sol-ico">🧼</div><h3>Resolver la higiene</h3><p>Protocolo paso a paso para micción inadecuada: causas médicas, conductuales y corrección.</p></div>
-    <div class="sol rv d3"><div class="sol-ico">🥗</div><h3>Alimentarlo bien</h3><p>Porciones por etapa, control de peso, premios adecuados y postura al comer.</p></div>
-    <div class="sol rv d4"><div class="sol-ico">🎓</div><h3>Educarlo con respeto</h3><p>Límites claros, socialización, ansiedad por separación y manejo de ladridos. Sin castigos.</p></div>
-    <div class="sol rv d5"><div class="sol-ico">🩺</div><h3>Detectar señales de alerta</h3><p>Vacunas, desparasitación, controles veterinarios y síntomas que necesitan atención urgente.</p></div>
-    <div class="sol rv"><div class="sol-ico">🐾</div><h3>Disfrutarlo en cada etapa</h3><p>Guía específica para cachorro, adulto y senior. Cada edad tiene sus prioridades.</p></div>
+    <div class="sol rv d1"><div class="sol-ico">🛡️</div><h3>Protección anti-IVDD</h3><p>Protocolos diarios para cuidar su columna, adaptar la casa y saber actuar en los primeros 10 minutos de una emergencia.</p></div>
+    <div class="sol rv d2"><div class="sol-ico">🧼</div><h3>Pis bajo control</h3><p>Aprende el método definitivo adaptado a la edad para educar su vejiga y eliminar la micción por ansiedad o dominancia.</p></div>
+    <div class="sol rv d3"><div class="sol-ico">🥗</div><h3>Peso e Higiene Perfecta</h3><p>Porciones exactas según su edad y tamaño para evitar el sobrepeso peligroso para los discos intervertebrales.</p></div>
+    <div class="sol rv d4"><div class="sol-ico">🎓</div><h3>Educación sin violencia</h3><p>Aprovecha su inteligencia sin chocar con su terquedad. Elimina ladridos y destructividad.</p></div>
+    <div class="sol rv d5"><div class="sol-ico">🩺</div><h3>Detección Precoz</h3><p>Aprende a "leer" los dolores silenciosos de tu salchi antes de que la lesión sea irreversible.</p></div>
+    <div class="sol rv"><div class="sol-ico">🐾</div><h3>Paz en el Hogar</h3><p>Convivencia armónica sin celos con niños, otros perros y tranquilidad cuando se queda solo en casa.</p></div>
   </div>
-  <div class="sol-cta rv"><a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero estos resultados → USD 17,99</a>
+  <div class="sol-cta rv"><a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero evitar errores con mi salchi 🐾 USD 17,99</a>
     <div class="price-note-block"><span class="price-note">💳 Pagás en tu moneda local, al precio adaptado a tu país</span></div>
   </div>
 </div></section>
 
-<section class="authority"><div class="w">
-  <div class="auth-box auth-box-stack rv">
-    <div class="auth-img auth-img-wide"><video autoplay muted loop playsinline preload="metadata" poster="dachshund-5-poster.jpg" aria-label="Nano, Zoyla, Gokú, Lupe y Onix, los cinco Dachshund, siendo alimentados en casa"><source src="dachshund-5-video.mp4" type="video/mp4"><img src="dachshund-5-perros-rect.webp" alt="Nano, Zoyla, Gokú, Lupe y Onix, los cinco Dachshund detrás de la guía" loading="lazy"></video></div>
-    <div>
-      <h3>Creada desde la experiencia real</h3>
-      <p>Esta guía no fue escrita desde un escritorio. Fue creada por quien convive día a día con <strong>Nano, Zoyla, Gokú, Lupe y Onix</strong> — cinco Dachshund con personalidades distintas y desafíos reales. Cada capítulo refleja situaciones vividas, errores aprendidos y soluciones probadas en casa antes de ser recomendadas.</p>
+<section class="authority">
+  <div class="w">
+    <div class="auth-box auth-box-stack rv">
+
+      <!-- INTRODUCCIÓN ANTES DEL VIDEO -->
+      <div class="auth-intro">
+        <span class="auth-kicker">🐾 UNA HISTORIA DETRÁS DE DACHSHUND FELIZ</span>
+
+        <h2>
+          ¿Por qué nació <span class="gold-italic">Dachshund Feliz?</span>
+        </h2>
+
+        <p class="auth-lead">
+          Porque <strong>amar a un salchi no siempre significa saber qué necesita.</strong>
+        </p>
+
+        <p class="auth-hook">
+          Y cuando aparecen dudas sobre su columna, alimentación, pis o conducta,
+          buscar respuestas en internet puede dejarte todavía más confundido.
+        </p>
+
+      <!-- VIDEO -->
+      <div class="auth-img auth-img-wide">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="dachshund-5-poster.jpg"
+          aria-label="Nano, Zoyla, Gokú, Lupe y Onix, los cinco Dachshund, siendo alimentados en casa">
+
+          <source src="dachshund-5-video.mp4" type="video/mp4">
+
+          <img
+            src="dachshund-5-perros-rect.webp"
+            alt="Nano, Zoyla, Gokú, Lupe y Onix, los cinco Dachshund detrás de la guía"
+            loading="lazy">
+        </video>
+      </div>
+
+      <!-- TEXTO COMPLEMENTARIO DEBAJO DEL VIDEO -->
+      <div class="auth-story">
+
+        <h3>
+          No quería que otros dueños se sintieran tan perdidos.
+        </h3>
+
+        <p>
+          Entiendo perfectamente tu situación porque convivo día a día con
+          <strong>Nano, Zoyla, Gokú, Lupe y Onix.</strong>
+        </p>
+
+        <p>
+          He vivido los sustos de los saltos, las alfombras arruinadas,
+          las dudas sobre qué hacer y esa sensación de preguntarte
+          constantemente si estás tomando la decisión correcta.
+        </p>
+
+        <p>
+          Por eso nació <strong>Dachshund Feliz</strong>: para reunir en un
+          solo lugar información práctica que te ayude a entender mejor a
+          tu salchi, prevenir errores cotidianos y acompañarlo durante
+          las diferentes etapas de su vida.
+        </p>
+
+        <p class="auth-final">
+          <strong>
+            Porque cuidar mejor no significa ser perfecto.<br>
+            Significa tener información para tomar mejores decisiones. ❤️
+          </strong>
+        </p>
+
+      </div>
+
     </div>
   </div>
-</div></section>
+</section>
 
 <section class="resources"><div class="w">
   <div class="resources-head rv">
-    <h2>7 Bonos exclusivos</h2>
-    <p>Además de la Guía Maestra de 10 capítulos, recibís estos 7 bonos específicos para acompañarte en cada etapa: en total, 8 archivos súper completos para cualquier dueño de Dachshund.</p>
+    <h2>🐾 Dachshund Feliz: La guía práctica para entender, cuidar y convivir mejor con tu salchi.</h2>
+    <p>Una biblioteca completa de recursos organizada para ayudarte con los problemas y dudas que aparecen en el día a día.</p>
   </div>
   <div class="res-grid">
-    <div class="res rv d1"><div class="res-emoji">📋</div><div class="res-body"><h3>Guía de Alimentación</h3><p>Elige la alimentación ideal para tu dachshund y protégelo del sobrepeso.</p><span class="res-val">Valor: USD 7</span></div></div>
-    <div class="res rv d2"><div class="res-emoji">🏡</div><div class="res-body"><h3>Ropa adecuada para la edad</h3><p>Que ponerle o no de acuerdo a la edad.</p><span class="res-val">Valor: USD 8</span></div></div>
-    <div class="res rv d3"><div class="res-emoji">🩺</div><div class="res-body"><h3>Alerta de Espalda (IVDD)</h3><p>Señales de emergencia, ejercicios preventivos y protocolo de acción si sospechás un problema de disco.</p><span class="res-val">Valor: USD 10</span></div></div>
-    <div class="res rv d4"><div class="res-emoji">🎓</div><div class="res-body"><h3>Guía para lograr mejorar la conducta</h3><p>Comandos básicos, manejo de terquedad y técnicas de motivación positiva para la raza.</p><span class="res-val">Valor: USD 9</span></div></div>
-    <div class="res rv d5"><div class="res-emoji">🛒</div><div class="res-body"><h3>Guía para entretenerlos mediante juegos</h3><p>Diferentes formas de de lograr cansarlos de cuerpo y mente.</p><span class="res-val">Valor: USD 7</span></div></div>
-    <div class="res rv"><div class="res-emoji">💧</div><div class="res-body"><h3>Guía de Micción Inadecuada</h3><p>Corregir malos hábitos con paciencia y amor.</p><span class="res-val">Valor: USD 12</span></div></div>
-    <div class="res rv"><div class="res-emoji">📅</div><div class="res-body"><h3>Guís de convivencia con otros hermanos/as</h3><p>Cómo presentarlos y evitar problemas en la convivencia diaria.</p><span class="res-val">Valor: USD 6</span></div></div>
+    <div class="res rv d1"><div class="res-emoji">📋</div><div class="res-body"><h3>Cuidar mejor su peso y alimentación.</h3><p>Nutrición precisa para prevenir el sobrepeso que destruye sus articulaciones y columna.</p><span class="res-val">Valor: USD 7</span></div></div>
+    <div class="res rv d2"><div class="res-emoji">🏡</div><div class="res-body"><h3>Ropa y Cuidado por Edad</h3><p>Aprende qué prendas previenen dolores de articulación y cuáles le hacen daño o materiales que le pueden causar alergias.</p><span class="res-val">Valor: USD 7</span></div></div>
+    <div class="res rv d3"><div class="res-emoji">🩺</div><div class="res-body"><h3>Reducir riesgos innecesarios para su columna.</h3><p>El manual salvavidas con ejercicios preventivos y los pasos exactos si tu salchi muestra dolor.</p><span class="res-val">Valor: USD 8</span></div></div>
+    <div class="res rv d4"><div class="res-emoji">🎓</div><div class="res-body"><h3>Entender determinados comportamientos</h3><p>Cómo ganarle a su terquedad, frenar los ladridos, ansiedad por separación y enseñarle límites con refuerzo positivo.</p><span class="res-val">Valor: USD 9</span></div></div>
+    <div class="res rv d5"><div class="res-emoji">🛒</div><div class="res-body"><h3>Estimulación Mental y Juegos</h3><p>Cansa su mente dentro de casa para evitar que rompa tus muebles por aburrimiento.</p><span class="res-val">Valor: USD 7</span></div></div>
+    <div class="res rv"><div class="res-emoji">💧</div><div class="res-body"><h3>Mejorar sus hábitos de eliminación.</h3><p>Paso a paso para que aprenda a hacer pis donde tú decidas, sin importar la edad que tenga.</p><span class="res-val">Valor: USD 9</span></div></div>
+    <div class="res rv"><div class="res-emoji">📅</div><div class="res-body"><h3>Prepararle para cambios en la familia.</h3><p>Evita peleas y estrés al presentarlo a otros animales o miembros de la familia.</p><span class="res-val">Valor: USD 6</span></div></div>
+    <div class="res rv"><div class="res-emoji">🤯</div><div class="res-body"><h3>Bono dedicado a los celos descontrolados</h3><p>Cómo entenderlos, prevenirlos y manejarlos según su edad y la causa real del problema.</p><span class="res-val">Valor: USD 6</span></div></div>
   </div>
-  <p class="res-total rv">Valor total de los bonos: <strong>USD 59</strong> — Incluidos sin costo adicional con la Biblioteca.</p>
+  <p class="res-total rv">Valor total de los bonos: <strong>USD 59</strong> — INCLUÍDOS GRATIS con tu acceso.</p>
 </div></section>
 
 <section class="transform"><div class="w">
-  <h2 class="transform-head rv">La diferencia es clara</h2>
+  <h2 class="transform-head rv">Tu vida antes y después de la Biblioteca</h2>
   <div class="ba-grid">
     <div class="ba-col ba-before rv">
-      <div class="ba-label">✕ Sin la Biblioteca</div>
-      <div class="ba-item"><span>❌</span>No sabés si lo que hace es normal o una señal de alerta.</div>
-      <div class="ba-item"><span>❌</span>Le das de comer sin saber si la porción es correcta.</div>
-      <div class="ba-item"><span>❌</span>Te preocupa su espalda pero no sabés cómo cuidarla.</div>
-      <div class="ba-item"><span>❌</span>Buscás en internet y cada sitio dice algo diferente.</div>
-      <div class="ba-item"><span>❌</span>Cometés errores que podrías haber evitado fácilmente.</div>
+      <div class="ba-label">✕ Vivir en el estrés y la duda</div>
+      <div class="ba-item"><span>❌</span>Vivir con pánico cada vez que el salchi salta del sofá.</div>
+      <div class="ba-item"><span>❌</span>Limpiar pis del suelo al volver cansado del trabajo.</div>
+      <div class="ba-item"><span>❌</span>Lidiar con ladridos insoportables que molestan a los vecinos.</div>
+      <div class="ba-item"><span>❌</span>Probar consejos de Internet que empeoran su conducta.</div>
+      <div class="ba-item"><span>❌</span>Sentir culpa por no saber cómo educarlo correctamente.</div>
     </div>
     <div class="ba-col ba-after rv d2">
-      <div class="ba-label">✓ Con la Biblioteca</div>
-      <div class="ba-item"><span>✅</span>Entendés su comportamiento y sabés cuándo actuar.</div>
-      <div class="ba-item"><span>✅</span>Tenés rutinas de alimentación claras por etapa de vida.</div>
-      <div class="ba-item"><span>✅</span>Prevenís problemas de columna con hábitos simples.</div>
-      <div class="ba-item"><span>✅</span>Tenés una fuente confiable para cada duda que aparezca.</div>
-      <div class="ba-item"><span>✅</span>Disfrutás mucho más la convivencia con tu Dachshund.</div>
+      <div class="ba-label">✓ Vivir en paz y con seguridad</div>
+      <div class="ba-item"><span>✅</span>Tener la casa adaptada y su espalda protegida.</div>
+      <div class="ba-item"><span>✅</span>Un perro educado que respeta los lugares para hacer pis.</div>
+      <div class="ba-item"><span>✅</span>Paseos tranquilos sin tirones ni ladridos desesperados.</div>
+      <div class="ba-item"><span>✅</span>Un manual claro y respaldado para resolver cualquier duda.</div>
+      <div class="ba-item"><span>✅</span>La satisfacción de ser el mejor dueño para tu Dachshund.</div>
     </div>
   </div>
 </div></section>
 
 <section class="pricing"><div class="w">
   <div class="price-card rv">
-    <div class="price-top">Lo que incluye tu Biblioteca Premium</div>
-    <div class="price-row"><span>Guía Maestra · 10 capítulos</span><span>USD 18</span></div>
-    <div class="price-row"><span>7 Bonos Exclusivos</span><span>USD 29</span></div>
-    <div class="price-total"><span>Valor total</span><span>USD 47</span></div>
+    <div class="price-top">Tu inversión hoy en su salud y felicidad</div>
+    <div class="price-row"><span>Guía Maestra Dachshund Feliz </span><span>USD 18</span></div>
+    <div class="price-row"><span>8 Bonos de Especialidad</span><span>USD 59</span></div>
+    <div class="price-total"><span>Valor Real</span><span>USD 77</span></div>
     <div class="price-big">
-      <div class="price-big-label">Hoy accedés a todo por:</div>
+      <div class="price-big-label">Accede hoy por solo:</div>
       <div class="price-big-num">USD 17,99</div>
       <span class="price-adapt">💳 El precio se adapta automáticamente a tu país y moneda</span>
     </div>
     <div class="price-perks">
-      <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Descarga inmediata</div>
-      <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Celular y PC</div>
-      <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Pago seguro</div>
-      <div class="price-perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Garantía de devolución</div>
+      <span class="price-perk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Garantía 100%</span>
+      <span class="price-perk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Acceso inmediato</span>
+      <span class="price-perk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Pago 100% seguro</span>
     </div>
-    <a class="btn btn-full" href="https://pay.hotmart.com/H105700278B">Quiero mi Biblioteca por USD 17,99</a>
-    <p class="price-urg">Esta versión incluye los 7 bonos exclusivos sin costo adicional. Podrán cambiar o dejar de incluirse en futuras actualizaciones.</p>
+    <a class="btn btn-full" href="https://pay.hotmart.com/H105700278B">Quiero las soluciones para mi salchi 🐾 USD 17,99</a>
+    <p class="price-urg">Mucho más barato que una consulta veterinaria de emergencia o reponer una alfombra arruinada. Incluye los 8 bonos gratis por TIEMPO LIMITADO.</p>
   </div>
 </div></section>
 
 <!-- ====== V2 Conversion Block ====== -->
 <section id="biblioteca-premium" style="background:#fff8ee;padding:70px 20px;border-top:2px solid #d8b15a;border-bottom:2px solid #d8b15a">
 <div style="max-width:1100px;margin:auto;text-align:center">
-<h2 style="font-size:2.3rem;margin-bottom:15px">No comprás un ebook. Accedés a una <span style="color:#b8860b">Biblioteca Premium</span>.</h2>
+<h2 style="font-size:2.3rem;margin-bottom:15px">Una solución completa para <span style="color:#b8860b">toda la vida de tu salchi</span></h2>
 <p style="font-size:1.2rem;max-width:850px;margin:0 auto 35px">
-Todo el contenido fue creado exclusivamente para dueños de Dachshund. Desde el cachorro hasta la etapa senior.
+Evita gastos médicos innecesarios y dolores de cabeza. Toda la información que necesitas en un solo lugar.
 </p>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-bottom:40px">
-<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>147</h3><p>Páginas</p></div>
-<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>10</h3><p>Capítulos</p></div>
-<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>7</h3><p>Bonos Premium</p></div>
-<div style="background:white;padding:22px;border-radius:16px;border:1px solid #ead9b6"><h3>8</h3><p>Guías completas</p></div>
-</div>
 
-<h3 style="margin-bottom:25px">Todo lo que vas a descargar</h3>
+<h3 style="margin-bottom:25px">Todo lo que recibirás de inmediato</h3>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;text-align:left">
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
 <strong>📘 Guía Maestra</strong>
-<p>10 capítulos con prevención de IVDD, alimentación, educación, salud, higiene, paseos, compras inteligentes y mucho más.</p>
+<p>Prevención de IVDD, nutrición, hábitos de higiene, salud preventiva, cachorros, seniors y manejo de conducta en general.</p>
 </div>
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
-<strong>🎁 7 Bonos</strong>
-<p>Micción, conducta, alimentación, juguetes, convivencia con otros perros, ropa y columna con protocolos específicos.</p>
+<strong>🎁 8 Bonos Especiales</strong>
+<p>Micción, ladridos, ropa adecuada, estimulación mental, peso ideal, celos, convivencia con los pares y protocolo de espalda.</p>
 </div>
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
-<strong>🐾 Todas las edades</strong>
-<p>Contenido adaptado para cachorros, adultos y seniors.</p>
+<strong>🐾 Para Todas las Etapas</strong>
+<p>Desde los primeros meses hasta sus años senior.</p>
 </div>
 <div style="background:#fff;padding:20px;border-radius:14px;border:1px solid #ead9b6">
-<strong>📱 Acceso inmediato</strong>
-<p>Disponible para celular, tablet y computadora apenas se acredita el pago.</p>
+<strong>📱 Formato Cómodo</strong>
+<p>Llévalo en tu teléfono celular siempre a mano para resolver emergencias.</p>
 </div>
 </div>
 
 <div style="margin-top:45px">
 <a href="https://pay.hotmart.com/H105700278B"
 style="background:#169a7b;color:white;padding:18px 34px;border-radius:40px;text-decoration:none;font-size:20px;font-weight:bold;display:inline-block">
-Quiero acceder a la Biblioteca Premium
+Quiero aprovechar esta oferta 🐾 
 </a>
 </div>
 </div>
@@ -472,76 +489,75 @@ Quiero acceder a la Biblioteca Premium
 
 <section class="cred"><div class="w">
   <div class="cred-head rv">
-    <h2>Miles de dueños de Dachshund ya confían en este proyecto</h2>
-    <p>Durante los últimos meses, así fue creciendo la comunidad Dachshund Feliz:</p>
+    <h2>Una comunidad que respalda el compromiso de Dachshund feliz</h2>
+    <p>Cientos de dueños ya transformaron la vida de sus Dachshund gracias a este contenido:</p>
   </div>
   <div class="cred-list">
-    <div class="cred-item rv d1"><span>🐾</span>Más de 96.000 visualizaciones en Instagram</div>
-    <div class="cred-item rv d2"><span>🐾</span>Videos con más de 77.000 reproducciones en TikTok</div>
-    <div class="cred-item rv d3"><span>🐾</span>Cientos de preguntas respondidas sobre la raza</div>
-    <div class="cred-item rv d4"><span>🐾</span>Contenido creado exclusivamente para Dachshund</div>
-    <div class="cred-item rv d5"><span>🐾</span>Una comunidad que crece todos los días</div>
+    <div class="cred-item rv d1"><span>🐾</span>Una comunidad que crece cada día en Instagram, Facebook y TikTok</div>
+    <div class="cred-item rv d2"><span>🐾</span>Consejos reales para cuidar, entender y proteger mejor a tu salchi</div>
+    <div class="cred-item rv d3"><span>🐾</span>Miles de consultas resueltas sobre salud y conducta</div>
+    <div class="cred-item rv d4"><span>🐾</span>Acompañamiento para cada etapa de la vida de tu Dachshund</div>
+    <div class="cred-item rv d5"><span>🐾</span>Respaldado por la experiencia diaria con 5 salchis</div>
   </div>
 </div></section>
 
 <section class="dmproof"><div class="w">
   <div class="dmproof-head rv">
-    <h2>Estas son algunas de las preguntas reales que recibo todos los días</h2>
-    <p>Mensajes reales de dueños de Dachshund que llegan cada semana a la comunidad @dachshund_feliz.</p>
+    <h2>Las angustias que respondemos a diario</h2>
+    <p>Mensajes reales que recibimos en @dachshund_feliz de dueños desesperados por ayuda.</p>
   </div>
   <div class="dm-grid">
     <div class="dm-card rv d1">
-      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
-      <div class="dm-bubble">"¿Cuándo puedo empezar a sacar a pasear a mi salchi?"</div>
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Consulta urgente</span></div>
+      <div class="dm-bubble">"Se tiró del sillón y lloró muy fuerte, ¿qué hago primero?"</div>
     </div>
     <div class="dm-card rv d2">
-      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
-      <div class="dm-bubble">"¿Es normal que duerma tanto?"</div>
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Problema de conducta</span></div>
+      <div class="dm-bubble">"Tiene 2 años y sigue haciendo pis dentro de casa, ya no sé qué limpiar."</div>
     </div>
     <div class="dm-card rv d3">
-      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
-      <div class="dm-bubble">"¿Por qué hace pis en todos lados?"</div>
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Desesperación</span></div>
+      <div class="dm-bubble">"Ladra cada vez que salgo de casa y los vecinos me quieren denunciar."</div>
     </div>
     <div class="dm-card rv d4">
-      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
-      <div class="dm-bubble">"¿Qué shampoo me recomendás?"</div>
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Duda de salud</span></div>
+      <div class="dm-bubble">"Siento que está muy gordo pero el alimento no le llena, ¿cómo lo controlo?"</div>
     </div>
     <div class="dm-card rv d5">
-      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Pregunta recibida por DM</span></div>
-      <div class="dm-bubble">"¿Puede subir al sillón?"</div>
+      <div class="dm-card-head"><div class="dm-avatar">🐾</div><span class="dm-meta">Educación</span></div>
+      <div class="dm-bubble">"Me muerde los muebles y me ignora cuando le digo que no."</div>
     </div>
   </div>
   <div class="dmproof-close rv">
-    <p>Todas reales.</p>
-    <strong>"Esta persona realmente ayuda."</strong>
+    <p>No tienes que pasar por esto solo.</p>
+    <strong>"Aprende a cuidarlo antes de que sea tarde."</strong>
   </div>
 </div></section>
 
 <section class="trust-s"><div class="w">
-  <div class="guar rv">
-    <div class="guar-ico">🛡️</div>
-    <h3>Garantía total de satisfacción</h3>
-    <p>Si la Biblioteca no supera tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones. Tu compra está protegida.</p>
-  </div>
-  <div class="faq rv">
-    <h2 class="faq-t">Preguntas frecuentes</h2>
-    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Cuándo recibo la guía?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">Inmediatamente después del pago. Recibís un correo con el enlace de descarga y podés acceder en el momento. No hay que esperar envío.</div></div></div>
-    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Es un PDF? ¿Puedo verlo desde el celular?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">Sí, es un archivo PDF de alta calidad, optimizado para verse perfecto en celular, tablet o computadora. No necesitás imprimirlo.</div></div></div>
-    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Sirve para Dachshund miniatura?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">Sí. Cubre estándar, miniatura y kaninchen. El capítulo 2 explica las diferencias específicas en porciones, accesorios y rutinas para cada tamaño.</div></div></div>
-    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Sirve si mi Dachshund ya es adulto?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">Totalmente. Tiene secciones específicas para cachorros, adultos y etapa senior. Plus: la guía de micción inadecuada y la prevención de IVDD aplican especialmente a adultos.</div></div></div>
+<div class="guar rv">
+  <div class="guar-ico">🛡️</div>
+  <h3>Garantía de devolución 100%</h3>
+  <p>Si no te satisface, te reembolsamos el 100% de tu compra. Sin preguntas, sin formularios complicados.</p>
+</div>
+<div class="faq rv">
+    <h2 class="faq-t">Preguntas Frecuentes</h2>
+    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Cuándo recibo el material?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">De forma inmediata. Al completar el pago recibes un correo con el enlace de acceso para descargar la guía y los 8 bonos en tu celular, tablet o PC.</div></div></div>
+    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Sirve si mi perro ya es adulto o viejito?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">¡Totalmente! La prevención de IVDD y el protocolo de micción inadecuada son indispensables para perros adultos y seniors, previniendo dolores articulares y corrigiendo mañas de años.</div></div></div>
+    <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Qué pasa si sospecho que mi perro ya tiene un problema de columna?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">El Bono de Alerta IVDD te dará el protocolo exacto para identificar signos de dolor, evitar movimientos fatales y acudir al veterinario con la información correcta.</div></div></div>
     <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Cómo es el pago? ¿Es seguro?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">El pago se procesa a través de Hotmart, la plataforma de productos digitales más grande de Latinoamérica. Acepta tarjetas de crédito, débito y otros medios según tu país. Tu información financiera nunca pasa por nosotros.</div></div></div>
     <div class="faq-i"><button class="faq-q" onclick="tgl(this)">¿Y si no me gusta?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in">Tenés garantía de devolución. Si no te satisface, te reembolsamos el 100%. Sin preguntas, sin formularios complicados.</div></div></div>
-  </div>
+</div>
 </div></section>
 
 <section class="closing"><div class="w">
-  <p class="closing-q rv">Ellos nos acompañan durante una parte de nuestra vida.<br>Nosotros somos toda la vida para ellos.</p>
-  <p class="closing-sub rv d1">Dale hoy los cuidados que merece.</p>
-  <a class="btn btn-lg rv d2" id="finalCta" href="https://pay.hotmart.com/H105700278B">Quiero acceder a la Biblioteca Premium</a>
+  <p class="closing-q rv">Ellos nos entregan toda su vida sin pedir nada a cambio.<br>Dale el cuidado que necesita para vivir sano y feliz a tu lado.</p>
+  <p class="closing-sub rv d1">Evita dolores de cabeza y protégelo desde hoy mismo.</p>
+  <a class="btn btn-lg rv d2" id="finalCta" href="https://pay.hotmart.com/H105700278B">Quiero darle una vida mas sana y feliz 🐾 </a>
 </div></section>
 
 <footer class="foot"><div class="w">
-  <p class="foot-tag">Porque un Dachshund feliz empieza con un dueño bien informado.</p>
+  <p class="foot-tag">Un Dachshund saludable y educado es el reflejo de un dueño informado.</p>
   <p>Dachshund Feliz · Biblioteca Premium · Silvi Aura</p>
 </div></footer>
 
@@ -551,7 +567,7 @@ Quiero acceder a la Biblioteca Premium
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')})},{threshold:.12,rootMargin:'0px 0px -32px 0px'});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 function tgl(b){const a=b.nextElementSibling,o=b.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(q=>{q.classList.remove('open');q.nextElementSibling.style.maxHeight='0'});if(!o){b.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
-const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 17,99'},{sub:'🐾 Adaptado a tu país',main:'Ver la Biblioteca Premium'},{sub:'⏳ Acceso inmediato',main:'Quiero mi Biblioteca'}];
+const phrases=[{sub:'💳 Precio en tu moneda local',main:'Acceder por USD 17,99'},{sub:'🐾 Evita gastos veterinarios',main:'Quiero ahora la solución'},{sub:'⏳ 8 Bonos Gratis Incluídos',main:'Quiero mi acceso hoy'}];
 let pi=0;const ft=document.getElementById('ft'),fs=document.getElementById('fs'),fc=document.getElementById('fc');
 ft.style.transition='opacity .3s';fs.style.transition='opacity .3s';
 setInterval(()=>{ft.style.opacity='0';fs.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi].main;fs.textContent=phrases[pi].sub;fs.style.display=phrases[pi].sub?'inline-block':'none';ft.style.opacity='1';fs.style.opacity='1'},280)},4200);
