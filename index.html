@@ -308,6 +308,14 @@ a{text-decoration:none}
   .app-benefits{grid-template-columns:1fr}
 }
 
+/* WHATSAPP */
+.btn-wa{--green:#1FAD57;--green-hover:#178F46;--green-glow:rgba(31,173,87,.30)}
+.cta-pair{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.cta-pair.c{justify-content:center}
+.cta-pair.col{flex-direction:column;align-items:stretch}
+.float-wa{position:fixed;bottom:90px;right:16px;z-index:80;width:250px;height:48px;display:flex;align-items:center;justify-content:center;background:#1FAD57;color:#fff;font-family:'Inter',sans-serif;font-weight:800;font-size:.9rem;border-radius:99px;border:1.5px solid rgba(255,255,255,.35);box-shadow:0 6px 24px rgba(31,173,87,.4);text-shadow:0 1px 2px rgba(0,0,0,.35);white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .4s,background .25s,transform .25s}
+.float-wa:hover{background:#178F46;transform:scale(1.03)}
+@media(max-width:768px){.hero .cta-pair{order:8;width:100%}.float-wa{left:12px;right:12px;width:auto}}
 </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -357,9 +365,12 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
           <span class="hero-tag">OFERTA ESPECIAL</span>
         </div>
 
+        <div class="cta-pair">
         <a class="btn btn-lg" href="https://pay.hotmart.com/H105700278B">
           Quiero mi Guía + App 🐾
         </a>
+        <a class="btn btn-lg btn-wa" href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+        </div>
 
         <div class="price-note-block">
           <span class="price-note">💳 Pagás en tu moneda local, al precio adaptado a tu país</span>
@@ -430,9 +441,12 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
           Tené la información a mano para tomar mejores decisiones con tu salchi.
         </div>
 
+        <div class="cta-pair">
         <a class="btn btn-lg" href="https://pay.hotmart.com/H105700278B">
           🐾 Quiero mi Guía + App
         </a>
+        <a class="btn btn-lg btn-wa" href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+        </div>
       </div>
 
       <div class="app-mockup rv d2">
@@ -467,7 +481,7 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
     <div class="sol rv d5"><div class="sol-ico">🩺</div><h3>Detección Precoz</h3><p>Aprende a "leer" los dolores silenciosos de tu salchi antes de que la lesión sea irreversible.</p></div>
     <div class="sol rv"><div class="sol-ico">🐾</div><h3>Paz en el Hogar</h3><p>Convivencia armónica sin celos con niños, otros perros y tranquilidad cuando se queda solo en casa.</p></div>
   </div>
-  <div class="sol-cta rv"><a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero mi Guía + App 🐾 USD 19,99</a>
+  <div class="sol-cta rv"><div class="cta-pair c"><a class="btn" href="https://pay.hotmart.com/H105700278B">Quiero mi Guía + App 🐾 USD 19,99</a><a class="btn btn-wa" href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a></div>
     <div class="price-note-block"><span class="price-note">💳 Pagás en tu moneda local, al precio adaptado a tu país</span></div>
   </div>
 </div></section>
@@ -553,8 +567,8 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
 
 <section class="resources"><div class="w">
   <div class="resources-head rv">
-    <h2>🐾 Dachshund Feliz: La app + guía digital para entender, cuidar y convivir mejor con tu salchi.</h2>
-    <p>Una app completa con recursos organizada para ayudarte con los problemas y dudas que aparecen en el día a día.</p>
+    <h2>🐾 Dachshund Feliz: La guía práctica para entender, cuidar y convivir mejor con tu salchi.</h2>
+    <p>Una biblioteca completa de recursos organizada para ayudarte con los problemas y dudas que aparecen en el día a día.</p>
   </div>
   <div class="res-grid">
     <div class="res rv d1"><div class="res-emoji">📋</div><div class="res-body"><h3>Cuidar mejor su peso y alimentación.</h3><p>Nutrición precisa para prevenir el sobrepeso que destruye sus articulaciones y columna.</p><span class="res-val">Valor: USD 7</span></div></div>
@@ -570,7 +584,7 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
 </div></section>
 
 <section class="transform"><div class="w">
-  <h2 class="transform-head rv">Tu vida antes y después de la app + guía</h2>
+  <h2 class="transform-head rv">Tu vida antes y después de la Biblioteca</h2>
   <div class="ba-grid">
     <div class="ba-col ba-before rv">
       <div class="ba-label">✕ Vivir en el estrés y la duda</div>
@@ -596,7 +610,7 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
     <div class="price-top">Oferta especial por tiempo limitado</div>
     <div class="price-row"><span>Guía Maestra Dachshund Feliz </span><span>USD 18</span></div>
     <div class="price-row"><span>8 Bonos de Especialidad</span><span>USD 59</span></div>
-    <div class="price-row"><span>📱 App Interactiva Dachshund Feliz</span><span>Incluída</span></div>
+    <div class="price-row"><span>📱 App Interactiva Dachshund Feliz</span><span>Incluida</span></div>
     <div class="price-total"><span>Precio anterior</span><span>USD 35,99</span></div>
     <div class="price-big">
       <div class="price-big-label">Accede hoy por solo:</div>
@@ -608,7 +622,7 @@ src="https://www.facebook.com/tr?id=1404055164898551&ev=PageView&noscript=1"
       <span class="price-perk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Acceso inmediato</span>
       <span class="price-perk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>Pago 100% seguro</span>
     </div>
-    <a class="btn btn-full" href="https://pay.hotmart.com/H105700278B">Quiero mi Guía + App 🐾 USD 19,99</a>
+    <div class="cta-pair col"><a class="btn btn-full" href="https://pay.hotmart.com/H105700278B">Quiero mi Guía + App 🐾 USD 19,99</a><a class="btn btn-full btn-wa" href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a></div>
     <p class="price-urg">Hoy accedés por USD 19,99 en lugar de USD 35,99. Incluye la App Interactiva, la Guía y los 8 bonos por TIEMPO LIMITADO.</p>
   </div>
 </div></section>
@@ -644,10 +658,16 @@ Evita gastos médicos innecesarios y dolores de cabeza. Toda la información que
 </div>
 
 <div style="margin-top:45px">
+<div class="cta-pair c">
 <a href="https://pay.hotmart.com/H105700278B"
 style="background:#169a7b;color:white;padding:18px 34px;border-radius:40px;text-decoration:none;font-size:20px;font-weight:bold;display:inline-block">
 Quiero mi Guía + App 🐾 
 </a>
+<a href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener"
+style="background:#1FAD57;color:white;padding:18px 34px;border-radius:40px;text-decoration:none;font-size:20px;font-weight:bold;display:inline-block">
+💬 Consultar por WhatsApp
+</a>
+</div>
 </div>
 </div>
 </section>
@@ -718,7 +738,10 @@ Quiero mi Guía + App 🐾
 <section class="closing"><div class="w">
   <p class="closing-q rv">Ellos nos entregan toda su vida sin pedir nada a cambio.<br>Dale el cuidado que necesita para vivir sano y feliz a tu lado.</p>
   <p class="closing-sub rv d1">Evita dolores de cabeza y protégelo desde hoy mismo.</p>
+  <div class="cta-pair c">
   <a class="btn btn-lg rv d2" id="finalCta" href="https://pay.hotmart.com/H105700278B">Quiero mi Guía + App 🐾 </a>
+  <a class="btn btn-lg btn-wa rv d3" href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+  </div>
 </div></section>
 
 <footer class="foot"><div class="w">
@@ -727,6 +750,7 @@ Quiero mi Guía + App 🐾
 </div></footer>
 
 <a class="float" href="https://pay.hotmart.com/H105700278B" id="fc"><span class="float-sub" id="fs">💳 Precio en tu moneda local</span><span class="float-main" id="ft">Acceder por USD 19,99</span></a>
+<a class="float-wa" id="fw" href="https://wa.me/5493492418616?text=Hola,%20quiero%20info%20de%20Dachshund%20Feliz" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
 
 <script>
 const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on')})},{threshold:.12,rootMargin:'0px 0px -32px 0px'});
@@ -738,7 +762,8 @@ ft.style.transition='opacity .3s';fs.style.transition='opacity .3s';
 setInterval(()=>{ft.style.opacity='0';fs.style.opacity='0';setTimeout(()=>{pi=(pi+1)%phrases.length;ft.textContent=phrases[pi].main;fs.textContent=phrases[pi].sub;fs.style.display=phrases[pi].sub?'inline-block':'none';ft.style.opacity='1';fs.style.opacity='1'},280)},4200);
 fc.style.transition='opacity .4s,background .25s';
 let finalCtaVisible=false;
-function updateFloat(){const s=window.scrollY;const show=s>350&&!finalCtaVisible;fc.style.opacity=show?'1':'0';fc.style.pointerEvents=show?'auto':'none'}
+const fw=document.getElementById('fw');
+function updateFloat(){const s=window.scrollY;const show=s>350&&!finalCtaVisible;fc.style.opacity=show?'1':'0';fc.style.pointerEvents=show?'auto':'none';if(fw){fw.style.opacity=show?'1':'0';fw.style.pointerEvents=show?'auto':'none'}}
 window.addEventListener('scroll',updateFloat,{passive:true});
 const finalCta=document.getElementById('finalCta');
 if(finalCta){
