@@ -2,10 +2,8 @@ DACHSHUND FELIZ — PROYECTO ACTUALIZADO
 
 Archivo principal: index.html
 
-Se modificó únicamente la sección de credibilidad/opiniones para mostrar tres capturas reales, con nombres de usuario y fotos de perfil ocultos por privacidad. El resto del HTML se conservó sin cambios.
+Se actualizó únicamente la sección de opiniones para mostrar dos capturas separadas de comentarios reales de Instagram. Se ocultaron nombres de usuario y fotos de perfil. En la primera captura se muestra solo el fragmento de agradecimiento, sin la segunda línea con errores; el corazón rojo de Me gusta queda visible. La segunda captura conserva el comentario y el corazón rojo.
 
-Para publicar en GitHub Pages: mantén index.html y sus archivos de recursos en el mismo directorio de publicación (normalmente la raíz del repositorio). Sube el contenido de esta carpeta al repositorio, reemplazando el index.html anterior y agregando los tres archivos opinion-comunidad-0X.png.
+Para publicar en GitHub Pages: mantén index.html y sus archivos de recursos en el mismo directorio de publicación (normalmente la raíz del repositorio). Sube el contenido de esta carpeta al repositorio, reemplazando el index.html anterior y agregando opinion-comunidad-01.png y opinion-comunidad-02.png.
 
-Recursos referenciados por la página actual: dachshund-5-perros-rect.webp, dachshund-5-poster.jpg, dachshund-5-video.mp4, hero-app-dachshund-feliz.png y las tres imágenes opinion-comunidad-0X.png.
-
-También se conservan Dachshund_Feliz_Hotmart_600x600.png, Dachshund_Feliz_Portada.png y kiwify.png. No aparecen referenciados en el index.html actual; se dejan incluidos para no eliminar materiales que podrían servir para otros usos.
+El resto de las secciones, precios, botones, enlaces de compra y recursos de la página se conservaron sin cambios.
