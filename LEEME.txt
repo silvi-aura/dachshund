@@ -1,0 +1,11 @@
+DACHSHUND FELIZ — PROYECTO ACTUALIZADO
+
+Archivo principal: index.html
+
+Se modificó únicamente la sección de credibilidad/opiniones para mostrar tres capturas reales, con nombres de usuario y fotos de perfil ocultos por privacidad. El resto del HTML se conservó sin cambios.
+
+Para publicar en GitHub Pages: mantén index.html y sus archivos de recursos en el mismo directorio de publicación (normalmente la raíz del repositorio). Sube el contenido de esta carpeta al repositorio, reemplazando el index.html anterior y agregando los tres archivos opinion-comunidad-0X.png.
+
+Recursos referenciados por la página actual: dachshund-5-perros-rect.webp, dachshund-5-poster.jpg, dachshund-5-video.mp4, hero-app-dachshund-feliz.png y las tres imágenes opinion-comunidad-0X.png.
+
+También se conservan Dachshund_Feliz_Hotmart_600x600.png, Dachshund_Feliz_Portada.png y kiwify.png. No aparecen referenciados en el index.html actual; se dejan incluidos para no eliminar materiales que podrían servir para otros usos.
