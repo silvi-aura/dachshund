@@ -1,9 +1,0 @@
-DACHSHUND FELIZ — PROYECTO ACTUALIZADO
-
-Archivo principal: index.html
-
-Se actualizó únicamente la sección de opiniones para mostrar dos capturas separadas de comentarios reales de Instagram. Se ocultaron nombres de usuario y fotos de perfil. En la primera captura se muestra solo el fragmento de agradecimiento, sin la segunda línea con errores; el corazón rojo de Me gusta queda visible. La segunda captura conserva el comentario y el corazón rojo.
-
-Para publicar en GitHub Pages: mantén index.html y sus archivos de recursos en el mismo directorio de publicación (normalmente la raíz del repositorio). Sube el contenido de esta carpeta al repositorio, reemplazando el index.html anterior y agregando opinion-comunidad-01.png y opinion-comunidad-02.png.
-
-El resto de las secciones, precios, botones, enlaces de compra y recursos de la página se conservaron sin cambios.
